@@ -13,9 +13,8 @@ let changeImage = function(area) {
     let cimg = document.getElementById("color"+area).value;
     console.log(cimg);
     document.getElementById("area"+area).style.backgroundImage = "url('"+cimg+"')";
-    document.getElementById("area"+area).style.backgroundSize = "710px 140px" ;
+    document.getElementById("area"+area).style.backgroundSize = "1220px 140px";
 }
-
 
 document.getElementById("button1").addEventListener("click", 
     function() {
@@ -32,5 +31,3 @@ function() {
     changeHex(3);
 }
 );
-
-// Hex code field, 
