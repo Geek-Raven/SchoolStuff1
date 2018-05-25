@@ -1,8 +1,19 @@
 let changeColor = function(area) {
     let color = document.getElementById("color"+area).value;
+    console.log(color);
+    document.getElementById("area"+area).style.backgroundColor = color;
+}
+let changeHex = function(area) {
+    let color = document.getElementById("color"+area).value;
     console.log("#"+color);
-    document.getElementById("area"+area)
-        .style.backgroundColor = "#"+color || color;
+    document.getElementById("area"+area).style.backgroundColor = "#"+color;
+}
+
+let changeImage = function(area) {
+    let cimg = document.getElementById("color"+area).value;
+    console.log(cimg);
+    document.getElementById("area"+area).style.backgroundImage = "url('"+cimg+"')";
+    document.getElementById("area"+area).style.backgroundSize = "710px 140px" ;
 }
 
 
@@ -13,12 +24,12 @@ document.getElementById("button1").addEventListener("click",
 );
 document.getElementById("button2").addEventListener("click",
     function() {
-        changeColor(2);
+        changeImage(2);
     }
 );
 document.getElementById("button3").addEventListener("click",
 function() {
-    changeColor(3);
+    changeHex(3);
 }
 );
 
