@@ -1,0 +1,24 @@
+header {
+    background-color: coral;
+    color: black;
+}
+
+main {
+    width: 95%;
+    height: 500px;
+    background-color: rgb(99, 102, 102);
+}
+
+section {
+    border-radius: 25px;
+    background-color: rgb(206, 206, 206);
+    padding: 20px; 
+    margin: 30px;
+    height: 16%;
+}
+
+/* 
+element name to select all elements of that type
+. to select all elements with that class
+# to select the single element with that id 
+*/
